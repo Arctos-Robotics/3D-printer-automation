@@ -93,10 +93,10 @@ G0 Z10 ; Raise arm to safe height
 G0 X0 Y0 ; Move to zero position (ready to pick buildplate)
 G0 Z0 ; Lower to buildplate
 ; Commands to grip the buildplate
-G0 Z10 ; Raise with buildplate
+M97 B-10 T0.8 ; Raise with buildplate
 G0 X100 Y50 ; Move to deposit location
 ; Commands to release the buildplate
-G0 Z10 ; Raise after releasing
+M97 B110 T0.8 ; Raise after releasing
 G0 X0 Y0 Z10 ; Return to home position
 ```
 
